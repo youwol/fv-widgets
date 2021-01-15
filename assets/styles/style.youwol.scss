@@ -1,0 +1,20 @@
+
+$color-primary:#f8f9fa;
+$color-primary-alt: darken($color-primary, 6.5%) ;
+$color-on-primary:#212529;
+
+$color-secondary:#be7200;
+$color-secondary-alt:darken($color-secondary, 6.5%) ;
+$color-on-secondary:#ffffff;
+
+$color-background: #212529;
+$color-background-alt: #444;
+
+$color-error:#B00020;
+$color-on-error:#ffffff;
+
+$color-focus:#ffbb00;
+$color-disabled:#bdbdbd;
+
+
+@import "./style.common.scss"

@@ -1,0 +1,48 @@
+{
+  "name": "@youwol/fv-widgets",
+  "keywords": [
+    "html",
+    "reactive-programming",
+    "rxjs",
+    "view",
+    "widgets"
+  ],
+  "version": "0.0.0",
+  "description": "Flux-view based widgets collection",
+  "author": "Guillaume Reinisch",
+  "license": "MIT",
+  "homepage": "",
+  "main": "dist/@youwol/fv-widgets.js",
+  "types": "src/index.ts",
+  "scripts": {
+    "build": "yarn build:dev",
+    "build:dev": "webpack --mode development",
+    "build:prod": "webpack --mode production",
+    "test": "jest -c ./jest.config.js --rootDir .",
+    "test-coverage": "jest -c ./jest.config.js --rootDir . --collect-coverage --collectCoverageFrom=./src/lib/**/*.ts --coverageDirectory=./coverage/$TARGET --runInBand",
+    "publish-npm-public": "yarn build:prod && yarn test-coverage && yarn publish --access public"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "rxjs": "6.x",
+    "@youwol/flux-view":"0.x"
+  },
+  "devDependencies": {
+    "awesome-typescript-loader": "5.2.1",
+    "rxjs": "6.x",
+    "rxjs-spy": "7.5.3",
+    "@types/node": "14.14.16",
+    "eslint": "7.16.0",
+    "eslint-loader": "4.0.2",
+    "typescript": "4.1.3",
+    "webpack": "^4.12.0",
+    "webpack-cli": "4.3.0",
+    "jest": "26.6.3",
+    "jest-junit": "12.0.0",
+    "ts-jest": "26.4.4"
+  }
+}
