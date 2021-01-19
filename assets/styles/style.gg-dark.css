@@ -88,8 +88,16 @@
   background-color: #BB86FC;
 }
 
+.fv-bg-on-focus {
+  background-color: #000000;
+}
+
 .fv-bg-disabled {
   background-color: #bdbdbd;
+}
+
+.fv-bg-on-disabled {
+  background-color: #000000;
 }
 
 .fv-text-primary {
@@ -136,8 +144,16 @@
   color: #BB86FC;
 }
 
+.fv-text-on-focus {
+  color: #000000;
+}
+
 .fv-text-disabled {
   color: #bdbdbd;
+}
+
+.fv-text-on-disabled {
+  color: #000000;
 }
 
 .fv-color-primary {
@@ -184,8 +200,16 @@
   border: solid 1px #BB86FC;
 }
 
+.fv-color-on-focus {
+  border: solid 1px #000000;
+}
+
 .fv-color-disabled {
   border: solid 1px #bdbdbd;
+}
+
+.fv-color-on-disabled {
+  border: solid 1px #000000;
 }
 
 .fv-pointer {
@@ -248,8 +272,16 @@
   background-color: #BB86FC;
 }
 
+.fv-bg-on-focus_active:active {
+  background-color: #000000;
+}
+
 .fv-bg-disabled_active:active {
   background-color: #bdbdbd;
+}
+
+.fv-bg-on-disabled_active:active {
+  background-color: #000000;
 }
 
 .fv-bg-primary_hover:hover {
@@ -296,8 +328,16 @@
   background-color: #BB86FC;
 }
 
+.fv-bg-on-focus_hover:hover {
+  background-color: #000000;
+}
+
 .fv-bg-disabled_hover:hover {
   background-color: #bdbdbd;
+}
+
+.fv-bg-on-disabled_hover:hover {
+  background-color: #000000;
 }
 
 .fv-bg-primary_focus:focus {
@@ -344,8 +384,16 @@
   background-color: #BB86FC;
 }
 
+.fv-bg-on-focus_focus:focus {
+  background-color: #000000;
+}
+
 .fv-bg-disabled_focus:focus {
   background-color: #bdbdbd;
+}
+
+.fv-bg-on-disabled_focus:focus {
+  background-color: #000000;
 }
 
 /*# sourceMappingURL=style.gg-dark.css.map */

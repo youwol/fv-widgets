@@ -11,7 +11,9 @@ $colorsMap: (
     "error":$color-error,
     "on-error":$color-on-error,
     "focus":$color-focus,
-    "disabled":$color-disabled
+    "on-focus":$color-on-focus,
+    "disabled":$color-disabled,
+    "on-disabled":$color-on-disabled
 );
 
 

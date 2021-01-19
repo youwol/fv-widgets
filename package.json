@@ -7,7 +7,7 @@
     "view",
     "widgets"
   ],
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Flux-view based widgets collection",
   "author": "Guillaume Reinisch",
   "license": "MIT",
