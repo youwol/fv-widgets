@@ -30,6 +30,11 @@ module.exports = {
             commonjs:'rxjs/operators',
             commonjs2:'rxjs/operators',
             root:['rxjs','operators']
+        },
+        '@youwol/flux-view': {
+            commonjs:'youwol/flux-view',
+            commonjs2:'youwol/flux-view',
+            root:['@youwol/flux-view']
         }
     }],
     module: {
