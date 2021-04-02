@@ -1,0 +1,129 @@
+
+$colorsMap: (
+    "primary":$color-primary, 
+    "primary-alt":$color-primary-alt, 
+    "on-primary":$color-on-primary, 
+    "secondary":$color-secondary, 
+    "secondary-alt":$color-secondary-alt, 
+    "on-secondary":$color-on-secondary, 
+    "background":$color-background, 
+    "background-alt":$color-background-alt, 
+    "error":$color-error,
+    "on-error":$color-on-error,
+    "success":$color-success,
+    "on-success":$color-on-success,
+    "focus":$color-focus,
+    "on-focus":$color-on-focus,
+    "disabled":$color-disabled,
+    "on-disabled":$color-on-disabled
+);
+
+
+.fv-btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.fv-rounded-circle{
+    border-radius: 50%!important
+}
+.fv-btn:active {
+    transform: scale(1.03);
+}
+.fv-btn-primary {
+    color: $color-on-primary;
+    background-color: $color-primary;
+    border: solid 1px $color-on-primary;
+}
+.fv-btn-primary:hover {
+    background-color: $color-primary-alt;
+}
+
+.fv-btn-secondary {
+    color: $color-on-secondary;
+    background-color: $color-secondary;
+    border: solid 1px $color-primary;
+}
+.fv-btn-secondary:hover {
+    background-color: $color-secondary-alt;
+}
+
+@each $nickName, $color in $colorsMap{
+    .fv-bg-#{$nickName}{
+        background-color: $color
+    }
+}
+@each $nickName, $color in $colorsMap{
+    .fv-text-#{$nickName}{
+        color: $color
+    }
+}
+@each $nickName, $color in $colorsMap{
+    .fv-color-#{$nickName}{
+        border: solid 1px $color
+    }
+}
+
+
+@each $nickName, $color in $colorsMap{
+    .fv-hover-bg-#{$nickName}:hover{
+        background-color: $color
+    }
+}
+@each $nickName, $color in $colorsMap{
+    .fv-hover-text-#{$nickName}:hover{
+        color: $color
+    }
+}
+@each $nickName, $color in $colorsMap{
+    .fv-hover-color-#{$nickName}:hover{
+        border: solid 1px $color
+    }
+}
+
+.fv-pointer{
+    cursor: pointer;
+}
+
+.fv-hover-opacity{
+    transition: opacity 0.5s
+}
+.fv-hover-opacity:hover{
+    opacity:1
+}
+
+.fv-bg-hover{
+    transition: background-color 0.5s
+}
+
+
+@each $name, $color in $colorsMap{
+    .fv-bg-#{$name}_active:active{
+        background-color: $color
+    }
+}
+
+@each $name, $color in $colorsMap{
+    .fv-bg-#{$name}_hover:hover{
+        background-color: $color
+    }
+}
+
+@each $name, $color in $colorsMap{
+    .fv-bg-#{$name}_focus:focus{
+        background-color: $color
+    }
+}
+

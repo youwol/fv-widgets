@@ -1,0 +1,26 @@
+
+$color-primary:#6200EE;
+$color-primary-alt: darken($color-primary, 6.5%) ;
+$color-on-primary:#ffffff;
+
+$color-secondary:#03DAC6;
+$color-secondary-alt:darken($color-secondary, 6.5%) ;
+$color-on-secondary:#000000;
+
+$color-background: #ffffff;
+$color-background-alt: #ffffff;
+
+$color-error:#B00020;
+$color-on-error:#ffffff;
+
+$color-success:green;
+$color-on-success:#212529;
+
+$color-focus:#6200EE;
+$color-on-focus:#000000;
+
+$color-disabled:#bdbdbd;
+$color-on-disabled:#000000;
+
+
+@import "./style.common.scss"
