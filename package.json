@@ -22,7 +22,7 @@
     "build:prod": "webpack --mode production && yarn build-css",
     "build:dev": "webpack --mode development && yarn build-css",
     "build": "yarn build:dev",
-    "publish-npm-public": "yarn build:prod && yarn publish --access public",
+    "publish-npm-public": "yarn build-css && yarn build:prod && yarn publish --access public",
     "test": "jest -c ./jest.config.js --rootDir ."
   },
   "repository": {
