@@ -1,53 +1,60 @@
 {
-  "name": "@youwol/fv-widgets",
-  "keywords": [
-    "html",
-    "reactive-programming",
-    "rxjs",
-    "view",
-    "widgets"
-  ],
-  "version": "0.0.3",
-  "description": "Flux-view based widgets collection",
-  "author": "Guillaume Reinisch",
-  "license": "MIT",
-  "homepage": "",
-  "main": "dist/@youwol/fv-widgets.js",
-  "types": "src/index.ts",
-  "scripts": {
-    "build-css-youwol": "sass ./src/sass/style.youwol.scss ./dist/assets/styles/style.youwol.css",
-    "build-css-gg-default": "sass ./src/sass/style.gg-default.scss ./dist/assets/styles/style.gg-default.css",
-    "build-css-gg-dark": "sass ./src/sass/style.gg-dark.scss ./dist/assets/styles/style.gg-dark.css",
-    "build-css": "yarn build-css-youwol && yarn build-css-gg-default && yarn build-css-gg-dark",
-    "build:prod": "webpack --mode production && yarn build-css",
-    "build:dev": "webpack --mode development && yarn build-css",
-    "build": "yarn build:dev",
-    "publish-npm-public": "yarn build-css && yarn build:prod && yarn publish --access public",
-    "test": "jest -c ./jest.config.js --rootDir ."
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/youwol/fv-widgets"
-  },
-  "dependencies": {},
-  "peerDependencies": {
-    "rxjs": "6.x",
-    "@youwol/flux-view":"0.x"
-  },
-  "devDependencies": {
-    "@youwol/flux-view":"0.x",
-    "sass": "1.32.5",
-    "awesome-typescript-loader": "5.2.1",
-    "rxjs": "6.x",
-    "rxjs-spy": "7.5.3",
-    "@types/node": "14.14.16",
-    "eslint": "7.16.0",
-    "eslint-loader": "4.0.2",
-    "typescript": "4.1.3",
-    "webpack": "^4.12.0",
-    "webpack-cli": "4.3.0",
-    "jest": "26.6.3",
-    "jest-junit": "12.0.0",
-    "ts-jest": "26.4.4"
-  }
+    "name": "@youwol/fv-widgets",
+    "keywords": [
+        "html",
+        "reactive-programming",
+        "rxjs",
+        "view",
+        "widgets"
+    ],
+    "version": "0.0.3",
+    "description": "Flux-view based widgets collection",
+    "author": "Guillaume Reinisch",
+    "license": "MIT",
+    "homepage": "",
+    "main": "dist/@youwol/fv-widgets.js",
+    "types": "src/index.ts",
+    "scripts": {
+        "build-css-youwol": "sass ./src/sass/style.youwol.scss ./dist/assets/styles/style.youwol.css",
+        "build-css-gg-default": "sass ./src/sass/style.gg-default.scss ./dist/assets/styles/style.gg-default.css",
+        "build-css-gg-dark": "sass ./src/sass/style.gg-dark.scss ./dist/assets/styles/style.gg-dark.css",
+        "build-css": "yarn build-css-youwol && yarn build-css-gg-default && yarn build-css-gg-dark",
+        "build:prod": "webpack --mode production && yarn build-css",
+        "build:dev": "webpack --mode development && yarn build-css",
+        "build": "yarn build:dev",
+        "publish-npm-public": "yarn build-css && yarn build:prod && yarn publish --access public",
+        "test": "jest -c ./jest.config.js --rootDir ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/youwol/fv-widgets"
+    },
+    "dependencies": {},
+    "peerDependencies": {
+        "rxjs": "6.x",
+        "@youwol/flux-view": "0.x"
+    },
+    "devDependencies": {
+        "@youwol/flux-view": "0.x",
+        "sass": "1.32.5",
+        "awesome-typescript-loader": "5.2.1",
+        "rxjs": "6.x",
+        "rxjs-spy": "7.5.3",
+        "@types/node": "14.14.16",
+        "eslint": "7.16.0",
+        "eslint-loader": "4.0.2",
+        "typescript": "4.1.3",
+        "webpack": "^4.12.0",
+        "webpack-cli": "4.3.0",
+        "jest": "26.6.3",
+        "jest-junit": "12.0.0",
+        "ts-jest": "26.4.4"
+    },
+    "youwol": {
+        "pipeline": {
+            "name": "yw_pipeline_webpack_ts",
+            "version": "0.0.0"
+        },
+        "cdnDependencies": {}
+    }
 }
