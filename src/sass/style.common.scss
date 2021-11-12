@@ -75,7 +75,16 @@ $colorsMap: (
         border: solid 1px $color
     }
 }
-
+@each $nickName, $color in $colorsMap{
+    .fv-border-#{$nickName}{
+        border: solid 1px $color
+    }
+}
+@each $nickName, $color in $colorsMap{
+    .fv-fill-#{$nickName}{
+        fill: $color
+    }
+}
 
 @each $nickName, $color in $colorsMap{
     .fv-hover-bg-#{$nickName}:hover{
