@@ -159,3 +159,30 @@ $filters: (
     }
 }
 
+
+/*
+Scroll Bar Definition
+*/
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+
+/* Track */
+::-webkit-scrollbar-track {
+background: $color-background-alt;
+border: solid 1px $color-primary;
+border-radius: 8px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: $color-background;
+border-radius: 10px;
+border:solid 1px $color-primary;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: $color-focus;
+}
