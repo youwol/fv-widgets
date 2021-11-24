@@ -17,6 +17,25 @@ $colorsMap: (
     "disabled":$color-disabled,
     "on-disabled":$color-on-disabled
 );
+$filters: (
+    "darker":0.9,
+    "x-darker":0.8,
+    "xx-darker":0.7,
+    "lighter":1.1,
+    "x-lighter":1.2,
+    "xx-lighter":1.3,
+);
+
+@each $nickName, $value in $filters{
+    .fv-#{$nickName}{
+        filter: brightness($value)
+    }
+}
+@each $nickName, $value in $filters{
+    .fv-hover-#{$nickName}:hover{
+        filter: brightness($value)
+    }
+}
 
 
 .fv-btn {
