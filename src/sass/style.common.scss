@@ -101,7 +101,11 @@ $colorsMap: (
         border: solid 1px $color
     }
 }
-
+@each $nickName, $color in $colorsMap{
+    .fv-hover-border-#{$nickName}:hover{
+        border: solid 1px $color
+    }
+}
 .fv-pointer{
     cursor: pointer;
 }
