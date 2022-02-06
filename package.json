@@ -1,33 +1,33 @@
 {
-    "name": "@youwol/fv-widgets",
-    "keywords": [
-        "html",
-        "reactive-programming",
-        "rxjs",
-        "view",
-        "widgets"
-    ],
-    "version": "0.0.5",
-    "description": "Flux-view based widgets collection",
-    "author": "Guillaume Reinisch",
-    "license": "MIT",
-    "homepage": "",
-    "main": "dist/@youwol/fv-widgets.js",
-    "types": "src/index.ts",
-    "scripts": {
-        "build-css-youwol": "sass ./src/sass/style.youwol.scss ./dist/assets/styles/style.youwol.css",
-        "build-css-gg-default": "sass ./src/sass/style.gg-default.scss ./dist/assets/styles/style.gg-default.css",
-        "build-css-gg-dark": "sass ./src/sass/style.gg-dark.scss ./dist/assets/styles/style.gg-dark.css",
-        "build-css": "yarn build-css-youwol && yarn build-css-gg-default && yarn build-css-gg-dark",
-        "build:prod": "webpack --mode production && yarn build-css",
-        "build:dev": "webpack --mode development && yarn build-css",
-        "build": "yarn build:dev",
-        "publish-npm-public": "yarn build-css && yarn build:prod && yarn publish --access public",
-        "test": "jest -c ./jest.config.js --rootDir ."
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/youwol/fv-widgets"
+  "name": "@youwol/fv-widgets",
+  "keywords": [
+    "html",
+    "reactive-programming",
+    "rxjs",
+    "view",
+    "widgets"
+  ],
+  "version": "0.0.5-next",
+  "description": "Flux-view based widgets collection",
+  "author": "Guillaume Reinisch",
+  "license": "MIT",
+  "homepage": "",
+  "main": "dist/@youwol/fv-widgets.js",
+  "types": "src/index.ts",
+  "scripts": {
+    "build-css-youwol": "sass ./src/sass/style.youwol.scss ./dist/assets/styles/style.youwol.css",
+    "build-css-gg-default": "sass ./src/sass/style.gg-default.scss ./dist/assets/styles/style.gg-default.css",
+    "build-css-gg-dark": "sass ./src/sass/style.gg-dark.scss ./dist/assets/styles/style.gg-dark.css",
+    "build-css": "yarn build-css-youwol && yarn build-css-gg-default && yarn build-css-gg-dark",
+    "build:prod": "webpack --mode production && yarn build-css",
+    "build:dev": "webpack --mode development && yarn build-css",
+    "build": "yarn build:dev",
+    "publish-npm-public": "yarn build-css && yarn build:prod && yarn publish --access public",
+    "test": "jest -c ./jest.config.js --rootDir ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/youwol/fv-widgets"
     },
     "dependencies": {},
     "peerDependencies": {
