@@ -18,7 +18,7 @@
     "build-css-youwol": "sass ./src/sass/style.youwol.scss ./dist/assets/styles/style.youwol.css",
     "build-css-gg-default": "sass ./src/sass/style.gg-default.scss ./dist/assets/styles/style.gg-default.css",
     "build-css-gg-dark": "sass ./src/sass/style.gg-dark.scss ./dist/assets/styles/style.gg-dark.css",
-    "build-css": "yarn build-css-youwol && yarn build-css-gg-default && yarn build-css-gg-dark",
+    "build-css": "del-cli dist && yarn build-css-youwol && yarn build-css-gg-default && yarn build-css-gg-dark",
     "build:prod": "webpack --mode production && yarn build-css",
     "build:dev": "webpack --mode development && yarn build-css",
     "build": "yarn build:dev",
@@ -36,6 +36,7 @@
     },
     "devDependencies": {
         "@youwol/flux-view": "0.x",
+        "del-cli": "^4.0.1",
         "sass": "1.32.5",
         "awesome-typescript-loader": "5.2.1",
         "rxjs": "6.x",
