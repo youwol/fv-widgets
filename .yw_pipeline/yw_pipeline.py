@@ -3,7 +3,7 @@ from typing import List
 from youwol.environment.forward_declaration import YouwolEnvironment
 from youwol.environment.models import IPipelineFactory
 from youwol.environment.models_project import JsBundle, PipelineStep, FileListing, Artifact, Pipeline, Flow
-from youwol.pipelines.pipeline_typescript_weback_npm import Paths, get_dependencies
+from youwol.pipelines.pipeline_typescript_weback_npm import Paths, get_dependencies, create_sub_pipelines_publish
 from youwol.pipelines.publish_cdn import PublishCdnLocalStep, PublishCdnRemoteStep
 from youwol_utils.context import Context
 from youwol_utils.utils_paths import parse_json
@@ -35,6 +35,8 @@ class PipelineFactory(IPipelineFactory):
 
     async def get(self, env: YouwolEnvironment, context: Context):
 
+        publish_remote_steps, dags = await create_sub_pipelines_publish(start_step="publish-local", context=context)
+
         async with context.start(action="pipeline") as ctx:
             await ctx.info(text="Instantiate pipeline")
             return Pipeline(
@@ -45,15 +47,15 @@ class PipelineFactory(IPipelineFactory):
                 dependencies=lambda project, _ctx: get_dependencies(project),
                 steps=[
                     BuildStep(),
-                    BuildStep(id="build-prod", run="yarn build:prod"),
                     PublishCdnLocalStep(packagedArtifacts=['dist']),
-                    PublishCdnRemoteStep()
+                    *publish_remote_steps
                 ],
                 flows=[
                     Flow(
                         name="prod",
                         dag=[
-                            "build > publish-local > publish-remote "
+                            "build > publish-local",
+                            *dags
                         ]
                     )
                 ]
