@@ -37,6 +37,13 @@ $filters: (
     }
 }
 
+.fv-font-family-regular{
+    font-family: $font-family-regular;
+}
+
+.fv-font-size-regular{
+    font-size: $font-size-regular;
+}
 
 .fv-btn {
     display: inline-block;

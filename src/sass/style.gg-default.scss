@@ -1,3 +1,5 @@
+$font-family-regular : 'Open Sans';
+$font-size-regular : 14px;
 
 $color-primary:#6200EE;
 $color-primary-alt: darken($color-primary, 6.5%) ;
@@ -23,4 +25,4 @@ $color-disabled:#bdbdbd;
 $color-on-disabled:#000000;
 
 
-@import "./style.common.scss"
+@import "./style.common.scss";
