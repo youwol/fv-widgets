@@ -1,12 +1,12 @@
 from typing import List
 
-from youwol.environment.forward_declaration import YouwolEnvironment
-from youwol.environment.models import IPipelineFactory
-from youwol.environment.models_project import JsBundle, PipelineStep, FileListing, Artifact, Pipeline, Flow
+from youwol.app.environment import YouwolEnvironment
+from youwol.app.environment.models import IPipelineFactory
+from youwol.app.environment.models_project import JsBundle, PipelineStep, FileListing, Artifact, Pipeline, Flow
 from youwol.pipelines.pipeline_typescript_weback_npm import Paths, get_dependencies, create_sub_pipelines_publish
 from youwol.pipelines.publish_cdn import PublishCdnLocalStep
-from youwol_utils.context import Context
-from youwol_utils.utils_paths import parse_json
+from youwol.utils.context import Context
+from youwol.utils.utils_paths import parse_json
 
 
 class BuildStep(PipelineStep):
