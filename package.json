@@ -1,14 +1,11 @@
 {
   "name": "@youwol/fv-widgets",
   "keywords": [
-    "html",
-    "reactive-programming",
-    "rxjs",
-    "view",
-    "widgets"
+    "youwol",
+    "css"
   ],
   "version": "0.1.3-wip",
-  "description": "Flux-view based widgets collection",
+  "description": "CSS collection for youwol",
   "author": "Guillaume Reinisch",
   "license": "MIT",
   "homepage": "",
