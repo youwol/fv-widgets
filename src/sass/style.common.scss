@@ -227,21 +227,20 @@ Scroll Bar Definition
 
 /* Track */
 ::-webkit-scrollbar-track {
-background: $color-background-alt;
-border: solid 1px $color-primary;
+background:#444444;
+border: solid 1px #7F7F7F;
 border-radius: 8px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-background: $color-background;
+background: #7F7F7F;
 border-radius: 10px;
-border:solid 1px $color-primary;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-background: $color-focus;
+background: #DC9F35;
 }
 
 .fv-blink {
